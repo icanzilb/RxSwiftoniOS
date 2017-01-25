@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -241,7 +242,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="55" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xzZ-iG-Uzk">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="653"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="V35-LM-Ecs" detailTextLabel="BMf-Yk-DBh" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="13S-qY-OdH">
@@ -273,8 +274,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xzZ-iG-Uzk" firstAttribute="topMargin" secondItem="4Lz-h1-fz8" secondAttribute="bottom" constant="-42" id="N2H-lg-p4f"/>
                             <constraint firstItem="xzZ-iG-Uzk" firstAttribute="leading" secondItem="4Gq-W9-5Ba" secondAttribute="leading" id="cJV-xb-yn5"/>
-                            <constraint firstItem="xzZ-iG-Uzk" firstAttribute="top" secondItem="4Lz-h1-fz8" secondAttribute="bottom" id="drE-zR-4pm"/>
                             <constraint firstItem="lK0-Jp-fMD" firstAttribute="top" secondItem="xzZ-iG-Uzk" secondAttribute="bottom" id="uL7-rR-8wT"/>
                             <constraint firstAttribute="trailing" secondItem="xzZ-iG-Uzk" secondAttribute="trailing" id="zta-6g-xP4"/>
                         </constraints>
