@@ -34,8 +34,9 @@ class SearchGitHubViewController: UIViewController {
             }
             .debounce(0.5, scheduler: MainScheduler.instance)
             .map { query in
-                let apiUrl = URL(string: "https://api.github.com/search/repositories?q=" + query)!
-                return URLRequest(url: apiUrl)
+                var apiUrl = URLComponents(string: "https://api.github.com/search/repositories")!
+                apiUrl.queryItems = [URLQueryItem(name: "q", value: query)]
+                return URLRequest(url: apiUrl.url!)
             }
             .flatMapLatest { request in
                 return URLSession.shared.rx.json(request: request)
