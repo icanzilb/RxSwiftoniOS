@@ -41,7 +41,7 @@ class PresentViewController: UITableViewController {
 
         // present view controller, observe output
         navigationItem.rightBarButtonItem!.rx.tap
-            .debounce(0.5, scheduler: MainScheduler.instance)
+            .throttle(0.5, latest: false, scheduler: MainScheduler.instance)
             .flatMapFirst {[weak self] _ -> Observable<Repo> in
                 if let addVC = self?.storyboard?.instantiateViewController(withIdentifier: "NewRepoViewController") as? NewRepoViewController {
                     self?.navigationController?.pushViewController(addVC, animated: true)
