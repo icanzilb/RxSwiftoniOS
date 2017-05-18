@@ -19,6 +19,9 @@
 		9C941A6B1E34AF15006DB1FE /* SourceControlAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C941A6A1E34AF15006DB1FE /* SourceControlAPI.swift */; };
 		9C941A6D1E34B1D9006DB1FE /* UnidirectionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C941A6C1E34B1D9006DB1FE /* UnidirectionalViewController.swift */; };
 		9C941A6F1E34B284006DB1FE /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C941A6E1E34B284006DB1FE /* Update.swift */; };
+		9CE561C01ECD969500886A9D /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE561BF1ECD969500886A9D /* CombineViewController.swift */; };
+		9CE561C21ECD980D00886A9D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE561C11ECD980D00886A9D /* UserCell.swift */; };
+		9CE561C41ECD98D600886A9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE561C31ECD98D600886A9D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		9C941A6A1E34AF15006DB1FE /* SourceControlAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceControlAPI.swift; sourceTree = "<group>"; };
 		9C941A6C1E34B1D9006DB1FE /* UnidirectionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnidirectionalViewController.swift; sourceTree = "<group>"; };
 		9C941A6E1E34B284006DB1FE /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		9CE561BF1ECD969500886A9D /* CombineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		9CE561C11ECD980D00886A9D /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9CE561C31ECD98D600886A9D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A1BBBBAB7C049E850CA78160 /* Pods-RxSwiftiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftiOS/Pods-RxSwiftiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C49D8FF82AB94B7479F3BC23 /* Pods_RxSwiftiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D713662B95F31539A6E7266E /* Pods-RxSwiftiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftiOS/Pods-RxSwiftiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,10 +123,21 @@
 				9C4F3ECE1E338FD700B6428E /* 1. SearchGitHub */,
 				9C4F3ED11E3390D500B6428E /* 2. PresentViewController */,
 				9C4F3ED71E33A15D00B6428E /* 3. Unidirectional Data Flow */,
+				9CE561BE1ECD967700886A9D /* 4. CombineLatest */,
 				9C8C1A831E33620B00A6AF51 /* AppDelegate.swift */,
 				9C8C1A951E33621A00A6AF51 /* Podfile */,
 			);
 			path = RxSwiftiOS;
+			sourceTree = "<group>";
+		};
+		9CE561BE1ECD967700886A9D /* 4. CombineLatest */ = {
+			isa = PBXGroup;
+			children = (
+				9CE561BF1ECD969500886A9D /* CombineViewController.swift */,
+				9CE561C11ECD980D00886A9D /* UserCell.swift */,
+				9CE561C31ECD98D600886A9D /* User.swift */,
+			);
+			name = "4. CombineLatest";
 			sourceTree = "<group>";
 		};
 		A01F6E59692B9587A51A115A /* Frameworks */ = {
@@ -271,7 +288,10 @@
 				9C4F3ED41E33912100B6428E /* PresentViewController.swift in Sources */,
 				9C941A6D1E34B1D9006DB1FE /* UnidirectionalViewController.swift in Sources */,
 				9C4F3ED61E33914900B6428E /* NewRepoViewController.swift in Sources */,
+				9CE561C01ECD969500886A9D /* CombineViewController.swift in Sources */,
+				9CE561C21ECD980D00886A9D /* UserCell.swift in Sources */,
 				9C8C1A841E33620B00A6AF51 /* AppDelegate.swift in Sources */,
+				9CE561C41ECD98D600886A9D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

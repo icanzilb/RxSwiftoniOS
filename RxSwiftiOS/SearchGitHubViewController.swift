@@ -49,8 +49,7 @@ class SearchGitHubViewController: UIViewController {
                 }
                 return items.flatMap(Repo.init)
             }
-
-            .bindTo(tableView.rx.items) { tableView, row, repo in
+            .bind(to: tableView.rx.items) { tableView, row, repo in
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
                 cell.textLabel!.text = repo.name
                 cell.detailTextLabel?.text = repo.language
