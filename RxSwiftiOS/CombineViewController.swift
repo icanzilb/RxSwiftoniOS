@@ -67,6 +67,7 @@ class CombineViewController: UIViewController {
                 return users.map { user in
                     let request = URLRequest(url: URL(string: user.avatarUrl)!)
                     return URLSession.shared.rx.data(request: request)
+                        .catchErrorJustReturn(UIImage.blank)
                 }
             }
             .flatMap(Observable.combineLatest)
@@ -82,6 +83,7 @@ class CombineViewController: UIViewController {
                     let request = URLRequest(url: URL(string: user.avatarUrl)!)
                     return URLSession.shared.rx.data(request: request)
                         .startWith(UIImage.blank)
+                        .catchErrorJustReturn(UIImage.blank)
                 }
             }
             .flatMap(Observable.combineLatest)
